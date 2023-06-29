@@ -6,3 +6,11 @@ The simulations require the Brian2 simulator (https://github.com/brian-team/bria
 
 
 The main code is in MiceV1_BBandNB_model_code.py. 
+
+
+The main code is divided into two parts: 
+
+-) modulation of sustained thalamic input (which is the mean level of firing rates of thalamic afferent to V1). This simulates the spectral LFPs of mice V1 when presented with vertical gratings visual stimuli of contrast level >30. 
+
+-) modulation of rythmic thalamic input (which reflects the oscillatory firing rate of LGN neurons when mice are presented with low contasts visual stimuli). This simulates the spectral LFPs of mice V1 when presented with vertical gratings visual stimuli of contrast level <30. 
+
