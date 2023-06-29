@@ -2,10 +2,11 @@
 This repository contains the code for running the computational model described in Nicolò Meneghetti, Chiara Cerri, Elena Tantillo, Eleonora Vannini, Matteo Caleo and Alberto Mazzoni "Narrow and broad gamma bands process complementary visual information in mouse primary visual cortex" eNeuro (2021)  https://doi.org/10.1523/ENEURO.0106-21.2021
 
 
-The simulations require the Brian2 simulator (https://github.com/brian-team/brian2) and Python3 (https://www.python.org/). 
+The simulations require the freely available Brian2 simulator (https://github.com/brian-team/brian2) and Python3 (https://www.python.org/). 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The main code are 
+The main codes are: 
 
 1) MiceV1_BBandNB_model_code.py
 
@@ -24,4 +25,5 @@ This code build the simulations to replicate the spectral content of FHM1 primar
 
 Briefly, the code modifies the previous one (developed for replicating awake mice V1 spectral content in healthy condition) by introducing three synaptic alterations known to be represent the (main component of) etiology of a genetic mouse model of familial-hemipleigc-type1 migraine. 
 
-These alterations are
+These three alterations are: 
+
