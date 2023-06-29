@@ -26,9 +26,14 @@ This code build the simulations to replicate the spectral content of FHM1 primar
 Briefly, the code modifies the previous one (developed for replicating awake mice V1 spectral content in healthy condition) by introducing three synaptic alterations known to be represent the (main component of) etiology of a genetic mouse model of familial-hemipleigc-type1 migraine. 
 
 These three alterations are: 
+
 -) 'thalamic_migraine_increase': this parameter simulates the increased strenght of thalamocortical afferent observed in vitro in FHM1 mice; 
+
 -) 'cortical_migraine_increase': this parameter simulates the increased strenght of intracortical glutamatergic synapses observed in vitro in FHM1 mice; 
--) 'thalamic_increase_migraine_asymmetry': this parameter simulates the asymmetry of thalamocortical synaptic enhancement: thalamocortical synapses are stronger if contacting inhibitory interneurons in FHM1 mice (for a thorough discussion of these parameters please seee the published research paper:  https://doi.org/10.1186/s10194-022-01495-9)
+
+-) 'thalamic_increase_migraine_asymmetry': this parameter simulates the asymmetry of thalamocortical synaptic enhancement: thalamocortical synapses are stronger if contacting inhibitory interneurons in FHM1 mice 
+
+(for a thorough discussion of these parameters please see the published research paper:  https://doi.org/10.1186/s10194-022-01495-9)
 
 
 
