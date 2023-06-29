@@ -7,7 +7,7 @@ The simulations require the Brian2 simulator (https://github.com/brian-team/bria
 
 The main code are 
 
-1) MiceV1_BBandNB_model_code.py. 
+1) MiceV1_BBandNB_model_code.py
 
 This code is divided into two parts: 
 
@@ -16,4 +16,7 @@ This code is divided into two parts:
 -) modulation of rythmic thalamic input (which reflects the oscillatory firing rate of LGN neurons when mice are presented with low contasts visual stimuli). This simulates the spectral LFPs of mice V1 when presented with vertical gratings visual stimuli of contrast level <30. 
 
 
-2) Migraine_V1_BB_NB_Brian2_simulations
+2) Migraine_V1_BB_NB_Brian2_simulations.py
+
+This code build the simulations to replicate the spectral content of FHM1 primary visual cortex awake mice. Full details can be found in the published article: Nicolò Meneghetti, Chiara Cerri, Eleonora Vannini, Elena Tantillo, Angelita Tottene, Daniela Pietrobon, Matteo Caleo, and Alberto Mazzoni "Synaptic alterations in visual cortex reshape contrast-dependent gamma oscillations and inhibition-excitation ratio in a genetic mouse model of migraine" https://doi.org/10.1186/s10194-022-01495-9
+Briefly, the code modify the previous one used for replicating 
