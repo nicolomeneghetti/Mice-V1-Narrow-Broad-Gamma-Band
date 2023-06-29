@@ -219,10 +219,10 @@ def NB_BB_mouseV1(trial,a_0,v_0):
     scipy.io.savemat('LFP_a0'+str(a_0)+'_v0'+str(int(v0))+'_trial'+str(trial)+'.mat', mdict={'LFP': total_LFP})
 
 
-
-# main loop of simulations across trials
+#########################################################################################################
+# main loop of simulations across trials - at first we modulate the sustained input level which triggers V1 broadband gamma band
 number_trials = 50
-sustained_thalamic_input=[500,600,700,800,900]
+sustained_thalamic_input=[500,600,700,800,900] % -> increasing levels of sustained inputs is equivalent to increasing levels of contrasts of the gratings visual stimuli
 store('modified')
 
 for v0 in sustained_thalamic_input:
@@ -234,3 +234,23 @@ for v0 in sustained_thalamic_input:
         a_0 = 0 # amplitude of thalamic periodic NB input
 
         NB_BB_mouseV1(trial,a_0,v_0)
+
+#########################################################################################################
+# main loop of simulations across trials - now we modulate the level of thalamic narrow gamma band which entrains the V1 narrow gamma band
+number_trials = 50
+rythmic_thalamic_input=[50,40,30,20,10] % -> decreasing levels of rythmic thalamic inputs which is equivalent to increasing levels of contrasts of the gratings visual stimuli (for low contrasts level, i.e., K<30)
+store('modified')
+
+for a0 in rythmic_thalamic_input:
+    restore('modified')
+    a0 = a0 * Hz # rythmic component of the thalamic input
+    store('modified1')
+    for trial in range(number_trials):
+        restore('modified1')
+        v_0 = 500 *Hz # amplitude of rythmic periodic NB input
+
+        NB_BB_mouseV1(trial,a_0,v_0)
+
+
+
+
